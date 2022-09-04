@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: 'Cabin', sans-serif;
     list-style: none;
-    text-decoration: none;
 }
 
 
@@ -45,11 +44,6 @@ header{
     letter-spacing: 2px;
     text-decoration: none;
     
-}
-
-.logo:after {
-    text-decoration: none;
-    color: var(--text-color);
 }
 
 .navbar {
