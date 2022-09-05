@@ -1,28 +1,27 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Cabin', sans-serif;
     list-style: none;
+    text-decoration: none;
 }
 
-
-
-:root{ /* Per gestire testi, colori dei vari elementi */
-    --bg-color: #165471;
+:root {
+    --bg-color: #07537e;
     --text-color: #fff;
-    --logo-color: rgb(215, 219, 224); 
+    --main-color: #bbf205;
 }
 
 
-body{
+body {
     background: var(--bg-color);
     color: var(--text-color);
 }
 
 /* HEADER */
 
-header{
+header {
     position: fixed;
     width: 100%;
     top: 0;
@@ -32,18 +31,21 @@ header{
     align-items: center;
     justify-content: space-between;
     background: transparent;
-    padding: 20px 12%; /* Gestisce la distanza tra logo e testi della navbar */
-    text-decoration: none;
+    padding: 25px 15%;
+    transition-duration: .3s;
 }
-
 
 .logo {
     color: var(--text-color);
-    font-size: 35px;
+    font-size: 30px;
     font-weight: bold;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-decoration: none;
-    
+}
+
+.logo:hover {
+    color: var(--text-color);
+    text-decoration: none;
 }
 
 .navbar {
@@ -54,10 +56,24 @@ header{
     position: relative;
 }
 
-.navbar a {  /* Richiama i singoli testi della navbar */
+.navbar a {
     color: var(--text-color);
     font-weight: bold;
-    font-size: 1.3rem;
-    padding: 10px 20px;
+    font-size: 1.2rem;
+    padding: 20px 20px;
     text-decoration: none;
-} 
+}
+
+.navbar a::after {
+ content: '';
+ position: absolute;
+ width: 0;
+ height: 2px;
+ background: var(--main-color);
+ left: 0;
+ bottom: -4px;
+ transition: ease .40s;
+}
+.navbar a:hover::after {
+    width: 100%;
+}
