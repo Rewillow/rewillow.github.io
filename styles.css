@@ -7,7 +7,7 @@
     text-decoration: none;
 }
 
-:root {
+:root { /* Gestione colori */
     --bg-color: #07537e;
     --text-color: #fff;
     --main-color: #bbf205;
@@ -74,6 +74,8 @@ header {
  bottom: -4px;
  transition: ease .40s;
 }
+
 .navbar a:hover::after {
     width: 100%;
 }
+
