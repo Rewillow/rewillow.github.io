@@ -38,7 +38,7 @@ header {
 
 header.sticky {
     padding: 6px 15%;
-    background: #035390b7;
+    background: #2a6593b7;
 }
 
 .logo {
@@ -130,6 +130,6 @@ header.sticky {
 .about p {
     font-size: 1.1rem;
     margin-bottom: 40px;
-    max-width: 600px;
+    max-width: 550px;
     letter-spacing: 0.8px;
 }
