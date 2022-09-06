@@ -11,6 +11,7 @@
     --bg-color: #07537e;
     --text-color: #fff;
     --main-color: #bbf205;
+    --about-color: #1a597d;
 }
 
 
@@ -33,6 +34,11 @@ header {
     background: transparent;
     padding: 25px 15%;
     transition-duration: .3s;
+}
+
+header.sticky {
+    padding: 6px 15%;
+    background: #035390b7;
 }
 
 .logo {
@@ -107,3 +113,23 @@ header {
 
 /* CHI SONO */
 
+.about {
+    width: 100%;
+    display: grid;
+    background: var(--about-color);
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    grid-gap: 2rem;
+}
+
+.about h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    max-width: 600px;
+    letter-spacing: 0.8px;
+}
