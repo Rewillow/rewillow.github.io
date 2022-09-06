@@ -86,7 +86,7 @@ header.sticky {
 }
 
 
-/* CHI SONO */
+/* HOME */
 
 .home {
     height: 100vh;
@@ -122,14 +122,19 @@ header.sticky {
     grid-gap: 2rem;
 }
 
-.about h1 {
+.about-text h1 {
     font-size: 3rem;
-    margin-bottom: 20px;
+    margin-left: 150px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    
 }
 
-.about p {
+.about-text p {
     font-size: 1.1rem;
-    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-left: 150px;
     max-width: 550px;
     letter-spacing: 0.8px;
+    margin-bottom: 50px;
 }
