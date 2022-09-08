@@ -23,7 +23,7 @@ body {
 /* HEADER */
 
 header {
-    position: fixed;
+    position: static;
     width: 100%;
     top: 0;
     right: 0;
@@ -38,7 +38,7 @@ header {
 
 header.sticky {
     padding: 6px 15%;
-    background: #2a6593b7;
+    background: #417399b7;
 }
 
 .logo {
@@ -136,5 +136,51 @@ header.sticky {
     margin-left: 150px;
     max-width: 550px;
     letter-spacing: 0.8px;
+    margin-bottom: 60px;
+    line-height: 30px;
+}
+
+
+/* PORTFOLIO */
+
+.portfolio {
+    width: 100%;
+    display: grid;
+
+}
+
+.portfolio h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-top: 70px;
     margin-bottom: 50px;
+}
+
+.portfolio h3 {
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+    margin-top: 1px;
+    text-align: center;
+}
+
+.portfolio-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(520px, auto));
+    grid-row: 8rem;
+    align-items: center;
+    margin-top: 1.8rem;
+    cursor: pointer;
+}
+
+.box img{
+    width: 75%;
+    height: auto;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    transition: all .30s;
+    margin-left: 15%;
+}
+
+.box img:hover{
+    transform: scale(1.1);
 }
