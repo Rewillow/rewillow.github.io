@@ -31,7 +31,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: transparent;
+    background:#0c6f99;
     padding: 25px 15%;
     transition-duration: .3s;
 }
@@ -123,7 +123,7 @@ header.sticky {
 }
 
 .about-text h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-left: 150px;
     margin-top: 50px;
     margin-bottom: 25px;
@@ -150,16 +150,15 @@ header.sticky {
 }
 
 .portfolio h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
     text-align: center;
-    margin-top: 70px;
-    margin-bottom: 50px;
+    margin-top: 60px;
+    margin-bottom: 30px;
 }
 
 .portfolio h3 {
     font-size: 1.5rem;
     margin-bottom: 50px;
-    margin-top: 1px;
     text-align: center;
 }
 
@@ -187,25 +186,38 @@ header.sticky {
 
 /* CONTATTAMI */
 
+.contact {
+  background: var(--about-color);
+  display: grid;
+}
+
+.contact-text h1 {
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.contact-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+
 .wrapper{
-    position: absolute;
-    top: 50%;
+    position: relative;
+    margin-top: 25vh;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
-    max-width: 550px;
-    background: rgba(0,0,0,0.8);
+    width: 750px;
+    height: 350px;
+    background: var(--bg-color);
     padding: 30px;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
   }
-  
-  .wrapper .title h1{
-    color: #c5ecfd;
-    text-align: center;
-    margin-bottom: 25px;
-  }
-  
+ 
   .contact-form{
     display: flex;
   }
@@ -214,6 +226,7 @@ header.sticky {
     display: flex;
     flex-direction: column;
     margin-right: 4%;
+  
   }
   
   .input-fields,
@@ -226,14 +239,15 @@ header.sticky {
     margin: 10px 0;
     background: transparent;
     border: 0px;
-    border-bottom: 2px solid #c5ecfd;
+    border-bottom: 3px solid #06abf1;
     padding: 10px;
-    color: #c5ecfd;
+    color: #ffffff;
     width: 100%;
   }
   
   .msg textarea{
-    height: 212px;
+    resize: none;
+    height: 216px;
   }
   
   ::-webkit-input-placeholder {
@@ -258,6 +272,7 @@ header.sticky {
       cursor: pointer;
       text-transform: uppercase;
   }
+  
 
   @media screen and (max-width: 600px){
   .contact-form{
