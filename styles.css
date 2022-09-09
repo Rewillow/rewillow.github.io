@@ -7,11 +7,20 @@
     text-decoration: none;
 }
 
+*:focus { /* Per eliminare i bordi non appena si clicca su una casella di testo */
+  outline: none;
+}
+
+html { /*Scrolling per le varie sezioni */
+  scroll-behavior: smooth;
+}
+
 :root { /* Gestione colori */
     --bg-color: #07537e;
     --text-color: #fff;
     --main-color: #bbf205;
     --about-color: #1a597d;
+    --button-color: #39b7dd;
 }
 
 
@@ -109,6 +118,7 @@ header.sticky {
     text-align: center;
     font-size: 1.5rem;
     letter-spacing: 1.5px;
+    margin-top: 20px;
 }
 
 /* CHI SONO */
@@ -125,8 +135,8 @@ header.sticky {
 .about-text h1 {
     font-size: 4rem;
     margin-left: 150px;
-    margin-top: 50px;
-    margin-bottom: 25px;
+    margin-top: 60px;
+    margin-bottom: 20px;
     
 }
 
@@ -153,7 +163,7 @@ header.sticky {
     font-size: 4rem;
     text-align: center;
     margin-top: 60px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .portfolio h3 {
@@ -216,6 +226,7 @@ header.sticky {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    
   }
  
   .contact-form{
@@ -226,7 +237,13 @@ header.sticky {
     display: flex;
     flex-direction: column;
     margin-right: 4%;
+    
   
+  }
+
+  .input-fields .input {
+    font-size: 1rem;
+    
   }
   
   .input-fields,
@@ -239,15 +256,16 @@ header.sticky {
     margin: 10px 0;
     background: transparent;
     border: 0px;
-    border-bottom: 3px solid #06abf1;
+    border-bottom: 3px solid var(--button-color);
     padding: 10px;
     color: #ffffff;
     width: 100%;
+    font-size: 1rem;
   }
   
   .msg textarea{
     resize: none;
-    height: 216px;
+    height: 228px;
   }
   
   ::-webkit-input-placeholder {
@@ -264,13 +282,14 @@ header.sticky {
   }
   
   .btn {
-      background: #39b7dd;
+      background: var(--button-color);
       text-align: center;
       padding: 15px;
-      border-radius: 5px;
+      border-radius: 15px;
       color: #fff;
       cursor: pointer;
       text-transform: uppercase;
+      font-size: 1.4rem;
   }
   
 
