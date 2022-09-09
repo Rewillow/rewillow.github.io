@@ -16,10 +16,10 @@ html { /*Scrolling per le varie sezioni */
 }
 
 :root { /* Gestione colori */
-    --bg-color: #07537e;
+    --bg-color: #074569;
     --text-color: #fff;
     --main-color: #bbf205;
-    --about-color: #1a597d;
+    --about-color: #164a68;
     --button-color: #39b7dd;
 }
 
@@ -31,8 +31,6 @@ body {
 
 /* HEADER */
 
-
-
 header {
     position: static;
     width: 100%;
@@ -42,7 +40,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background:#0c6f99;
+    background:#0a6186;
     padding: 25px 15%;
     transition-duration: .3s;
 }
@@ -53,11 +51,8 @@ header.sticky {
 }
 
 .logo {
-    color: var(--text-color);
-    font-size: 30px;
-    font-weight: bold;
-    letter-spacing: 0.8px;
-    text-decoration: none;
+    width: 13%;
+    height: 13%;
 }
 
 .logo:hover {
@@ -96,7 +91,6 @@ header.sticky {
     width: 100%;
 }
 
-
 /* HOME */
 
 .home {
@@ -120,7 +114,7 @@ header.sticky {
     text-align: center;
     font-size: 1.5rem;
     letter-spacing: 1px;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 /* CHI SONO */
@@ -158,7 +152,6 @@ header.sticky {
 .portfolio {
     width: 100%;
     display: grid;
-
 }
 
 .portfolio h1 {
@@ -172,11 +165,11 @@ header.sticky {
     font-size: 1.5rem;
     margin-bottom: 50px;
     text-align: center;
-}
+} 
 
 .portfolio-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(520px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(500px, auto));
     grid-row: 8rem;
     align-items: center;
     margin-top: 1.8rem;
@@ -187,9 +180,9 @@ header.sticky {
     width: 75%;
     height: auto;
     border-radius: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     transition: all .30s;
-    margin-left: 15%;
+    margin-left: 12%;
 }
 
 .box img:hover{
@@ -228,7 +221,6 @@ header.sticky {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    
   }
  
   .contact-form{
@@ -239,13 +231,10 @@ header.sticky {
     display: flex;
     flex-direction: column;
     margin-right: 4%;
-    
-  
   }
 
   .input-fields .input {
     font-size: 1rem;
-    
   }
   
   .input-fields,
