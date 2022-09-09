@@ -379,6 +379,10 @@ header.sticky {
       grid-template-columns: repeat(auto-fit, minmax(450px, auto));
     }
 
+    .contact {
+      height: 130vh;
+    }
+
     .wrapper {
       width: 350px;
       height: 500px;
@@ -412,4 +416,8 @@ header.sticky {
 
 .btn {
   margin-top: 15px;
+}
+
+.footer-basic h3 {
+  font-size: 1rem;
 }
