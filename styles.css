@@ -31,7 +31,7 @@ body {
 
 /* HEADER */
 
-nav {
+header {
     position: static;
     width: 100%;
     top: 0;
@@ -45,7 +45,7 @@ nav {
     transition-duration: .3s;
 }
 
-nav.sticky {
+header.sticky {
     padding: 6px 15%;
     background: #417399b7;
 }
@@ -90,8 +90,6 @@ nav.sticky {
 .navbar a:hover::after {
     width: 100%;
 }
-
-
 
 /* HOME */
 
@@ -345,5 +343,4 @@ nav.sticky {
     color:var(--text-color);
     margin-bottom:0;
   }
-
 
