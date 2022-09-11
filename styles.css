@@ -416,6 +416,10 @@ nav.sticky {
     align-items: center;
 }
 
+.home {
+height: 85vh;
+}
+
 .home-text h1{
   font-size: 5rem;
 }
