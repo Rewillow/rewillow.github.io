@@ -155,7 +155,7 @@ nav.sticky {
 }
 
 .about-text p {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     margin-top: 40px;
     margin-left: 150px;
     max-width: 550px;
@@ -658,11 +658,11 @@ margin-left: 18px;
   }
   
   .home-text h1{
-    font-size: 4.5rem;
+    font-size: 5rem;
   }
   
   .home-text h4 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .about {
@@ -671,48 +671,46 @@ margin-left: 18px;
   }
   
   .about-text h1 {
-  font-size: 3rem;
-  margin-left: 25px;
+  font-size: 3.5rem;
+  margin-left: 45px;
   
   }
   
   .about-text p {
-    margin-left: 25px;
-    max-width: 400px;
+    margin-left: 45px;
+    
     font-size: 1.2rem;
   
   }
   
   
   .portfolio h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
   
   .portfolio h3 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   
   .portfolio-content {
-    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
   }
   
   .contact-text h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
   
   .contact-text h3 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   
   .wrapper {
-    width: 420px;
-    height: 370px;
+    margin-top: 30vh;
+    width: 650px;
+    height: auto;
   }
   
-  .footer-basic h3 {
-    font-size: 1rem;
-  
-  }
+
     }
 
 
