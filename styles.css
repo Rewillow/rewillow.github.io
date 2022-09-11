@@ -460,9 +460,22 @@ margin-left: 25px;
   grid-template-columns: repeat(auto-fit, minmax(450px, auto));
 }
 
-/*.box img {
-  width: 60%;
-}*/
+.contact-text h1 {
+  font-size: 3rem;
+}
+
+.contact-text h3 {
+  font-size: 1.3rem;
+}
+
+.wrapper {
+ 
+  width: 400px;
+  height: 350px;
+}
+
+
+
 
 
 
