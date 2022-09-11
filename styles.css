@@ -230,7 +230,7 @@ nav.sticky {
 
 .wrapper{
     position: relative;
-    margin-top: 25vh;
+    margin-top: 27vh;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 750px;
@@ -448,7 +448,6 @@ margin-left: 25px;
 
 .portfolio h1 {
   font-size: 3rem;
-  
 }
 
 .portfolio h3 {
@@ -469,9 +468,13 @@ margin-left: 25px;
 }
 
 .wrapper {
- 
   width: 400px;
   height: 350px;
+}
+
+.footer-basic h3 {
+  font-size: 1rem;
+
 }
 
 
