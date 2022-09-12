@@ -364,8 +364,7 @@ nav.sticky {
 
 
 
-
-
+  /* SEZIONE RESPONSIVE */
 
 @media all and (max-width: 480px) {
 
@@ -478,7 +477,7 @@ margin-left: 18px;
 }
   }
 
- @media all and (min-width: 481px) and (max-width: 715px) {
+ @media all and (min-width: 481px) and (max-width: 799px) {
 
   .navbar {
     width: 100%;
@@ -593,7 +592,7 @@ margin-left: 18px;
   }
     }
 
- @media all and (min-width: 716px) and (max-width: 950px) {
+ @media all and (min-width: 800px) and (max-width: 991px) {
 
 .navbar {
     width: 100%;
@@ -601,13 +600,13 @@ margin-left: 18px;
       align-items: flex-start;
   }
 
-.toggle-button {
-  
-  align-items: center;
-  width: 70px;
-  height: 45px;
-  display: flex;
-  }
+  .toggle-button {
+    margin-top: 11px;
+    align-items: center;
+    width: 55px;
+    height: 35px;
+    display: flex;
+    }
 
 .navbar-links {
       display: none;
@@ -705,6 +704,37 @@ margin-left: 18px;
   
 
     }
+
+  @media all and (min-width: 992px) and (max-width: 1280px) {
+
+.about-text h1 {
+  margin-left: 100px;
+}
+
+.about-text p {
+  margin-left: 100px;
+}
+
+.portfolio-content {
+  grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+}
+
+
+
+.logo {
+  width: 20%;
+  height: auto;
+  align-items: center;
+}
+
+
+  .about {
+    grid-template-columns: repeat(1, 1fr);
+   
+  }
+
+    }
+
 
 
 
