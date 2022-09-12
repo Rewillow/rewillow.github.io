@@ -16,10 +16,10 @@ html { /*Scrolling per le varie sezioni */
 }
 
 :root { /* Gestione colori */
-    --bg-color: #074569;
+    --bg-color: #0b6294;
     --text-color: #fff;
     --main-color: #bbf205;
-    --about-color: #164a68;
+    --about-color: #1d5e83;
     --button-color: #39b7dd;
 }
 
