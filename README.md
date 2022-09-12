@@ -1,1 +1,0 @@
-# Samuele Gugliotta - Sito Personale
