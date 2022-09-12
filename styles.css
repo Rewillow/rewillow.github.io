@@ -165,9 +165,46 @@ nav.sticky {
 }
 
 
+/* SKILL */
+
+.skill {
+  display: grid;
+  width: 100%;
+}
+
+.skill-text h1 {
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.skill-text h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 30px;
+}
+
+.skill-content {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  
+}
+
+.l-skill {
+  width: 180px;
+  margin-bottom: 270px;
+  margin-top: 30px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
 /* PORTFOLIO */
 
 .portfolio {
+  background: var(--about-color);
     width: 100%;
     display: grid;
 }
@@ -210,7 +247,7 @@ nav.sticky {
 /* CONTATTAMI */
 
 .contact {
-  background: var(--about-color);
+  background: var(--bg-color);
   display: grid;
 }
 
@@ -235,7 +272,7 @@ nav.sticky {
     transform: translate(-50%, -50%);
     width: 750px;
     height: 350px;
-    background: var(--bg-color);
+    background: var(--about-color);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
@@ -305,7 +342,7 @@ nav.sticky {
 
   .footer-basic {
     padding:40px 0;
-    background-color:var(--bg-color);
+    background-color:var(--about-color);
     color:#ffffff;
   }
   
@@ -446,6 +483,36 @@ margin-left: 18px;
 }
 
 
+.skill-text h1 {
+  
+  font-size: 3rem;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.skill-text h3 {
+  font-size: 1.2rem;
+  margin-bottom: 60px;
+  margin-top: 30px;
+}
+
+.skill-content {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 210px;
+  
+}
+
+.l-skill {
+  display: grid;
+  width: 150px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
 .portfolio h1 {
   font-size: 3rem;
 }
@@ -559,6 +626,36 @@ margin-left: 18px;
     font-size: 1.2rem;
   
   }
+
+  .skill-text h1 {
+  
+    font-size: 3rem;
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+  
+  .skill-text h3 {
+    font-size: 1.3rem;
+    margin-bottom: 60px;
+    margin-top: 30px;
+  }
+  
+  .skill-content {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 210px;
+    
+  }
+  
+  .l-skill {
+    display: grid;
+    width: 150px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
   
   
   .portfolio h1 {
@@ -674,6 +771,31 @@ margin-left: 18px;
     font-size: 1.2rem;
   
   }
+
+  .skill-text h1 {
+  
+    font-size: 3.5rem;
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+  
+  .skill-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 60px;
+    margin-top: 30px;
+  }
+
+  .l-skill {
+    width: 140px;
+    margin-bottom: 300px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+
+  
+ 
   
   
   .portfolio h1 {
