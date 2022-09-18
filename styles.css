@@ -11,10 +11,9 @@
   outline: none;
 }
 
-html { /*Scrolling per le varie sezioni */
+/* html { Scrolling per le varie sezioni 
   scroll-behavior: smooth;
-}
-
+} */
 body {
   background: #0b6294;
   color: #fff;
@@ -98,7 +97,8 @@ nav nav.sticky {
 
 /* HOME */
 .home {
-  height: 100vh;
+  margin-top: 150px;
+  margin-bottom: 200px;
   width: 100%;
   background: #0b6294;
   background-size: cover;
@@ -119,6 +119,77 @@ nav nav.sticky {
   margin-top: 5px;
 }
 
+.button .cta1 {
+  display: inline-block;
+  padding: 10px 25px;
+  margin: 85px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  border: 2px solid black;
+  border-radius: 7px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+.button .cta2 {
+  display: inline-block;
+  padding: 10px 25px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  border: 2px solid black;
+  border-radius: 7px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+.cta1:hover {
+  /*color: white;*/
+  /*background-color: #0b4f87;*/
+  -webkit-animation: pulsa 0.5s;
+          animation: pulsa 0.5s;
+}
+
+.cta2:hover {
+  /*color: white;*/
+  /*background-color: #0b4f87;*/
+  -webkit-animation: pulsa 0.5s;
+          animation: pulsa 0.5s;
+}
+
+@-webkit-keyframes pulsa {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5s;
+    color: rgb(255, 255, 255);
+    background-color: #0b4f87;
+    border: 2px black solid;
+    transform: scale(1.15);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pulsa {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5s;
+    color: rgb(255, 255, 255);
+    background-color: #0b4f87;
+    border: 2px black solid;
+    transform: scale(1.15);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 /* CHI SONO */
 .about {
   width: 100%;
@@ -314,7 +385,7 @@ nav nav.sticky {
 /* FOOTER */
 .footer-basic {
   padding: 40px 0;
-  background-color: #547b8b;
+  background-color: #24719e;
   color: #ffffff;
 }
 .footer-basic ul {

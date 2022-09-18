@@ -8,7 +8,7 @@ $nav-sticky: #417399b7;
 $toggle-button: #ffffff;
 $webkit-color: #c5ecfd;
 $contact-color: #2684bb;
-$footer: #547b8b;
+$footer: #295061;
 
 
 * {
@@ -24,9 +24,9 @@ $footer: #547b8b;
   outline: none;
 }
 
-html { /*Scrolling per le varie sezioni */
+/* html { Scrolling per le varie sezioni 
   scroll-behavior: smooth;
-}
+} */
 
 
 body {
@@ -121,13 +121,11 @@ nav {
     border-radius: 10px;
   }
 
-
-
-
 /* HOME */
 
 .home {
-    height: 100vh;
+    margin-top: 150px;
+    margin-bottom: 200px;
     width: 100%;
     background: $bg-color;
     background-size: cover;
@@ -149,6 +147,72 @@ nav {
         margin-top: 5px;
     }
 }
+
+.button {
+  
+  
+  
+
+  .cta1 {
+    display: inline-block;
+    padding: 10px 25px;
+    margin: 85px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    border-radius: 7px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    transition: .3s ease 
+    
+    
+  }
+  
+  .cta2 {
+    display: inline-block;
+    padding: 10px 25px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    border-radius: 7px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    transition: .3s ease 
+    
+    
+  }
+}
+
+.cta1:hover {
+	/*color: white;*/
+	/*background-color: #0b4f87;*/
+	animation: pulsa 0.5s;
+}
+
+.cta2:hover {
+	/*color: white;*/
+	/*background-color: #0b4f87;*/
+	animation: pulsa 0.5s;
+}
+
+@keyframes pulsa {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		opacity: 0.5s;
+		color: rgb(255, 255, 255);
+		background-color: #0b4f87;
+		border: 2px black solid;
+		transform: scale(1.15);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+	}
+
 
 
 /* CHI SONO */
@@ -365,7 +429,7 @@ nav {
 
   .footer-basic {
     padding:40px 0;
-    background-color: $footer;
+    background-color: $nav-color;
     color: $toggle-button;
 
     ul {
