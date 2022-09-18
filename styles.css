@@ -167,12 +167,19 @@ nav nav.sticky {
   margin-bottom: 20px;
 }
 
-.l-skill {
-  width: 180px;
-  margin-bottom: 270px;
-  margin-top: 30px;
-  margin-left: 70px;
-  margin-right: 70px;
+#skill-box {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+#skill-box li {
+  display: inline-block;
+  margin: 20px;
+  margin-bottom: 150px;
+}
+#skill-box li img {
+  width: 200px;
+  height: auto;
 }
 
 /* PORTFOLIO */
@@ -205,7 +212,7 @@ nav nav.sticky {
   width: 75%;
   height: auto;
   border-radius: 30px;
-  margin-bottom: 25px;
+  margin-bottom: 55px;
   transition: all 0.3s;
   margin-left: 12%;
 }
@@ -215,7 +222,7 @@ nav nav.sticky {
 
 /* CONTATTAMI */
 .contact {
-  background: #0b6294;
+  background: #2684bb;
   display: grid;
 }
 .contact .contact-text h1 {
@@ -237,7 +244,7 @@ nav nav.sticky {
   transform: translate(-50%, -50%);
   width: 750px;
   height: 350px;
-  background: var(--about-color);
+  background: #1d5e83;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -307,7 +314,7 @@ nav nav.sticky {
 /* FOOTER */
 .footer-basic {
   padding: 40px 0;
-  background-color: #1d5e83;
+  background-color: #0b6294;
   color: #ffffff;
 }
 .footer-basic ul {
@@ -359,6 +366,9 @@ nav nav.sticky {
 
 /* SEZIONE RESPONSIVE */
 @media all and (max-width: 480px) {
+  nav {
+    padding: 25px 15%;
+  }
   .navbar {
     width: 100%;
     flex-direction: column;
@@ -399,20 +409,20 @@ nav nav.sticky {
   .home {
     height: 85vh;
   }
-  .home-text h1 {
+  .home .home-text h1 {
     font-size: 4.5rem;
   }
-  .home-text h4 {
+  .home .home-text h4 {
     font-size: 1.2rem;
   }
   .about {
     grid-template-columns: repeat(1, 1fr);
   }
-  .about-text h1 {
+  .about .about-text h1 {
     font-size: 3rem;
     margin-left: 18px;
   }
-  .about-text p {
+  .about .about-text p {
     margin-left: 18px;
     max-width: 340px;
     font-size: 1rem;
@@ -427,21 +437,19 @@ nav nav.sticky {
     margin-bottom: 60px;
     margin-top: 30px;
   }
-  .skill-content {
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 210px;
+  #skill-box {
+    padding: 0;
+    margin: 0;
+    text-align: center;
   }
-  .l-skill {
-    display: grid;
-    width: 150px;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
+  #skill-box li {
+    display: inline-block;
+    margin: 15px;
+    margin-bottom: 120px;
   }
-  .portfolio h1 {
-    font-size: 3rem;
+  #skill-box li img {
+    width: 170px;
+    height: auto;
   }
   .portfolio h3 {
     font-size: 1.2rem;
@@ -465,6 +473,9 @@ nav nav.sticky {
   }
 }
 @media all and (min-width: 481px) and (max-width: 799px) {
+  nav {
+    padding: 25px 15%;
+  }
   .navbar {
     width: 100%;
     flex-direction: column;
@@ -537,18 +548,19 @@ nav nav.sticky {
     margin-bottom: 60px;
     margin-top: 30px;
   }
-  .skill-content {
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 210px;
+  #skill-box {
+    padding: 0;
+    margin: 0;
+    text-align: center;
   }
-  .l-skill {
-    display: grid;
-    width: 150px;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
+  #skill-box li {
+    display: inline-block;
+    margin: 15px;
+    margin-bottom: 120px;
+  }
+  #skill-box li img {
+    width: 170px;
+    height: auto;
   }
   .portfolio h1 {
     font-size: 3rem;
@@ -574,6 +586,9 @@ nav nav.sticky {
   }
 }
 @media all and (min-width: 800px) and (max-width: 991px) {
+  nav {
+    padding: 25px 15%;
+  }
   .navbar {
     width: 100%;
     flex-direction: column;
@@ -590,7 +605,7 @@ nav nav.sticky {
     display: none;
     width: 100%;
   }
-  .navbar-links ul {
+  .navbar-links .ul {
     width: 100%;
     flex-direction: column;
   }
@@ -618,10 +633,10 @@ nav nav.sticky {
   .home {
     height: 85vh;
   }
-  .home-text h1 {
+  .home .home-text h1 {
     font-size: 5rem;
   }
-  .home-text h4 {
+  .home .home-text h4 {
     font-size: 1.3rem;
   }
   .about {
@@ -645,12 +660,19 @@ nav nav.sticky {
     margin-bottom: 60px;
     margin-top: 30px;
   }
-  .l-skill {
-    width: 140px;
-    margin-bottom: 300px;
-    margin-top: 30px;
-    margin-left: 30px;
-    margin-right: 30px;
+  #skill-box {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  #skill-box li {
+    display: inline-block;
+    margin: 15px;
+    margin-bottom: 120px;
+  }
+  #skill-box li img {
+    width: 170px;
+    height: auto;
   }
   .portfolio h1 {
     font-size: 3.5rem;
@@ -674,6 +696,9 @@ nav nav.sticky {
   }
 }
 @media all and (min-width: 992px) and (max-width: 1280px) {
+  nav {
+    padding: 25px 15%;
+  }
   .about-text h1 {
     margin-left: 100px;
   }
@@ -691,4 +716,18 @@ nav nav.sticky {
   .about {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+#skill-box {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+#skill-box li {
+  display: inline-block;
+  margin: 15px;
+  margin-bottom: 120px;
+}
+#skill-box li img {
+  width: 170px;
+  height: auto;
 }/*# sourceMappingURL=styles.css.map */

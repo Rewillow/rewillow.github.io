@@ -7,6 +7,7 @@ $nav-color: #24719e;
 $nav-sticky: #417399b7;
 $toggle-button: #ffffff;
 $webkit-color: #c5ecfd;
+$contact-color: #2684bb;
 
 
 * {
@@ -204,12 +205,21 @@ nav {
     margin-bottom: 20px;
   }
 
-  .l-skill {
-    width: 180px;
-    margin-bottom: 270px;
-    margin-top: 30px;
-    margin-left: 70px;
-    margin-right: 70px;
+  #skill-box {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      margin: 20px;
+      margin-bottom: 150px;
+
+    img {
+      width: 200px;
+      height: auto;
+    }
+    }
   }
 
   /* PORTFOLIO */
@@ -245,7 +255,7 @@ nav {
         width: 75%;
         height: auto;
         border-radius: 30px;
-        margin-bottom: 25px;
+        margin-bottom: 55px;
         transition: all .30s;
         margin-left: 12%; 
     }
@@ -258,7 +268,7 @@ nav {
   /* CONTATTAMI */
 
 .contact {
-    background: $bg-color;
+    background: $contact-color;
     display: grid;
   
     .contact-text h1 {
@@ -283,7 +293,7 @@ nav {
       transform: translate(-50%, -50%);
       width: 750px;
       height: 350px;
-      background: var(--about-color);
+      background: $about-color;
       padding: 30px;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.3);
@@ -354,7 +364,7 @@ nav {
 
   .footer-basic {
     padding:40px 0;
-    background-color: $about-color;
+    background-color: $bg-color;
     color: $toggle-button;
 
     ul {
@@ -389,7 +399,6 @@ nav {
     
   }
   
- 
   .footer-basic .social {
     text-align:center;
     padding-bottom:25px;
@@ -418,6 +427,10 @@ nav {
 
   @media all and (max-width: 480px) {
 
+    nav {
+      padding: 25px 15%;
+    }
+
     .navbar {
          width: 100%;
            flex-direction: column;
@@ -431,19 +444,19 @@ nav {
     .navbar-links {
            display: none;
            width: 100%;
-       }
-     
-    .navbar-links ul {
-           width: 100%;
-           flex-direction: column;
-       }
-     
-    .navbar-links ul li {
-           text-align: center;
-       }
-     
-    .navbar-links ul li a {
-           padding: .5rem 1rem;
+
+           ul {
+            width: 100%;
+            flex-direction: column;
+        }
+
+          ul li {
+          text-align: center;
+      }
+
+      ul li a {
+        padding: .5rem 1rem;
+    }
        }
      
     .navbar-links.active {
@@ -467,34 +480,33 @@ nav {
    
    .home {
    height: 85vh;
-   }
-   
+
    .home-text h1{
-     font-size: 4.5rem;
-   }
-   
-   .home-text h4 {
-     font-size: 1.2rem;
+    font-size: 4.5rem;
+  }
+  
+  .home-text h4 {
+    font-size: 1.2rem;
+  }
    }
    
    .about {
      grid-template-columns: repeat(1, 1fr);
+
+     .about-text h1 {
+      font-size: 3rem;
+      margin-left: 18px;
+      
+      }
+      
+      .about-text p {
+        margin-left: 18px;
+        max-width: 340px;
+        font-size: 1rem;
+      
+      }
     
    }
-   
-   .about-text h1 {
-   font-size: 3rem;
-   margin-left: 18px;
-   
-   }
-   
-   .about-text p {
-     margin-left: 18px;
-     max-width: 340px;
-     font-size: 1rem;
-   
-   }
-   
    
    .skill-text h1 {
      
@@ -509,26 +521,22 @@ nav {
      margin-top: 30px;
    }
    
-   .skill-content {
-     display: block;
-     margin: 0 auto;
-     margin-bottom: 210px;
-     
-   }
-   
-   .l-skill {
-     display: grid;
-     width: 150px;
-     margin-bottom: 30px;
-     margin-top: 30px;
-     margin-left: 10px;
-     margin-right: 10px;
-   }
-   
-   
-   .portfolio h1 {
-     font-size: 3rem;
-   }
+   #skill-box {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      margin: 15px;
+      margin-bottom: 120px;
+
+    img {
+      width: 170px;
+      height: auto;
+    }
+    }
+  }
    
    .portfolio h3 {
      font-size: 1.2rem;
@@ -560,6 +568,10 @@ nav {
 
  @media all and (min-width: 481px) and (max-width: 799px) {
 
+  nav {
+    padding: 25px 15%;
+  }
+
         .navbar {
           width: 100%;
             flex-direction: column;
@@ -577,20 +589,22 @@ nav {
       .navbar-links {
             display: none;
             width: 100%;
+
+            ul {
+              width: 100%;
+              flex-direction: column;
+          }
+        
+        ul li {
+              text-align: center;
+          }
+        
+        ul li a {
+              padding: .5rem 1rem;
+          }
         }
       
-      .navbar-links ul {
-            width: 100%;
-            flex-direction: column;
-        }
-      
-      .navbar-links ul li {
-            text-align: center;
-        }
-      
-      .navbar-links ul li a {
-            padding: .5rem 1rem;
-        }
+     
       
       .navbar-links.active {
            
@@ -654,20 +668,21 @@ nav {
           margin-top: 30px;
         }
         
-        .skill-content {
-          display: block;
-          margin: 0 auto;
-          margin-bottom: 210px;
-          
-        }
-        
-        .l-skill {
-          display: grid;
-          width: 150px;
-          margin-bottom: 30px;
-          margin-top: 30px;
-          margin-left: 10px;
-          margin-right: 10px;
+        #skill-box {
+          padding: 0;
+          margin: 0;
+          text-align: center;
+      
+          li {
+            display: inline-block;
+            margin: 15px;
+            margin-bottom: 120px;
+      
+          img {
+            width: 170px;
+            height: auto;
+          }
+          }
         }
         
         .portfolio h1 {
@@ -702,6 +717,10 @@ nav {
           }
       
  @media all and (min-width: 800px) and (max-width: 991px) {
+
+  nav {
+    padding: 25px 15%;
+  }
       
       .navbar {
           width: 100%;
@@ -720,20 +739,22 @@ nav {
       .navbar-links {
             display: none;
             width: 100%;
+
+            .ul {
+              width: 100%;
+              flex-direction: column;
+          }
+        
+        ul li {
+              text-align: center;
+          }
+        
+        ul li a {
+              padding: .5rem 1rem;
+          }
+        
         }
       
-      .navbar-links ul {
-            width: 100%;
-            flex-direction: column;
-        }
-      
-      .navbar-links ul li {
-            text-align: center;
-        }
-      
-      .navbar-links ul li a {
-            padding: .5rem 1rem;
-        }
       
       .navbar-links.active {
            
@@ -756,8 +777,7 @@ nav {
       
       .home {
         height: 85vh;
-        }
-        
+
         .home-text h1{
           font-size: 5rem;
         }
@@ -765,6 +785,9 @@ nav {
         .home-text h4 {
           font-size: 1.3rem;
         }
+        }
+        
+       
       
         .about {
           grid-template-columns: repeat(1, 1fr);
@@ -796,14 +819,24 @@ nav {
           margin-bottom: 60px;
           margin-top: 30px;
         }
+
+        #skill-box {
+          padding: 0;
+          margin: 0;
+          text-align: center;
       
-        .l-skill {
-          width: 140px;
-          margin-bottom: 300px;
-          margin-top: 30px;
-          margin-left: 30px;
-          margin-right: 30px;
+          li {
+            display: inline-block;
+            margin: 15px;
+            margin-bottom: 120px;
+      
+          img {
+            width: 170px;
+            height: auto;
+          }
+          }
         }
+        
         
         .portfolio h1 {
           font-size: 3.5rem;
@@ -835,6 +868,10 @@ nav {
           }
       
  @media all and (min-width: 992px) and (max-width: 1280px) {
+
+  nav {
+    padding: 25px 15%;
+  }
       
       .about-text h1 {
         margin-left: 100px;
@@ -862,3 +899,20 @@ nav {
       
           }
       
+          #skill-box {
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        
+            li {
+              display: inline-block;
+              margin: 15px;
+              margin-bottom: 120px;
+        
+            img {
+              width: 170px;
+              height: auto;
+            }
+            }
+          }
+          
