@@ -44,7 +44,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     background: $nav-color;
-    padding: 25px 15%;
+    padding: 7px 15%;
     transition-duration: .3s;
 
     nav.sticky {
@@ -54,8 +54,10 @@ nav {
 }
 
 .logo {
-    width: 13%;
-    height: 13%;
+    width: 10%;
+    height: 10%;
+    margin-bottom: 3px;
+    margin-top: 3px;
 
 .logo:hover {
         color: $text-color;
