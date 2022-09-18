@@ -164,9 +164,15 @@ body {
 
   > div > div > ul > li {
     list-style: none;
-    color: #fff;
+    color: $text-color;
     font-size: 1.7rem;
     padding: 1rem;
+  }
+
+  > div > div > img {
+    width: 22%;
+    height: 22%;
+    margin-bottom: 30px;
   }
 
   > div > div > ul > li > a {
