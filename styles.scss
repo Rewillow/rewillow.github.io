@@ -558,8 +558,7 @@ nav {
    }
      }
 
-
-     @media all and (min-width: 481px) and (max-width: 799px) {
+ @media all and (min-width: 481px) and (max-width: 799px) {
 
         .navbar {
           width: 100%;
@@ -671,8 +670,6 @@ nav {
           margin-right: 10px;
         }
         
-        
-        
         .portfolio h1 {
           font-size: 3rem;
         }
@@ -704,7 +701,7 @@ nav {
         }
           }
       
-       @media all and (min-width: 800px) and (max-width: 991px) {
+ @media all and (min-width: 800px) and (max-width: 991px) {
       
       .navbar {
           width: 100%;
@@ -808,11 +805,6 @@ nav {
           margin-right: 30px;
         }
         
-      
-        
-       
-        
-        
         .portfolio h1 {
           font-size: 3.5rem;
         }
@@ -842,7 +834,7 @@ nav {
       
           }
       
-        @media all and (min-width: 992px) and (max-width: 1280px) {
+ @media all and (min-width: 992px) and (max-width: 1280px) {
       
       .about-text h1 {
         margin-left: 100px;
@@ -857,15 +849,13 @@ nav {
       }
       
       
-      
       .logo {
         width: 20%;
         height: auto;
         align-items: center;
       }
       
-      
-        .about {
+     .about {
           grid-template-columns: repeat(1, 1fr);
          
         }
