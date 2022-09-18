@@ -119,21 +119,14 @@ nav nav.sticky {
   margin-top: 5px;
 }
 
-.button .cta1 {
-  display: inline-block;
-  padding: 10px 25px;
-  margin: 85px;
-  color: rgb(0, 0, 0);
-  background-color: rgb(255, 255, 255);
-  border: 2px solid black;
-  border-radius: 7px;
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  transition: 0.3s ease;
+.button {
+  text-align: center;
 }
-.button .cta2 {
+.button .cta {
   display: inline-block;
   padding: 10px 25px;
+  margin-top: 90px;
+  margin-right: 50px;
   color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
   border: 2px solid black;
@@ -143,14 +136,7 @@ nav nav.sticky {
   transition: 0.3s ease;
 }
 
-.cta1:hover {
-  /*color: white;*/
-  /*background-color: #0b4f87;*/
-  -webkit-animation: pulsa 0.5s;
-          animation: pulsa 0.5s;
-}
-
-.cta2:hover {
+.cta:hover {
   /*color: white;*/
   /*background-color: #0b4f87;*/
   -webkit-animation: pulsa 0.5s;
@@ -201,7 +187,7 @@ nav nav.sticky {
 .about h1 {
   font-size: 4rem;
   margin-left: 150px;
-  margin-top: 60px;
+  margin-top: 75px;
   margin-bottom: 20px;
 }
 .about p {
@@ -210,7 +196,7 @@ nav nav.sticky {
   margin-left: 150px;
   max-width: 550px;
   letter-spacing: 0.8px;
-  margin-bottom: 60px;
+  margin-bottom: 120px;
   line-height: 30px;
 }
 
