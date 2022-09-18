@@ -8,6 +8,7 @@ $nav-sticky: #417399b7;
 $toggle-button: #ffffff;
 $webkit-color: #c5ecfd;
 $contact-color: #2684bb;
+$footer: #547b8b;
 
 
 * {
@@ -364,7 +365,7 @@ nav {
 
   .footer-basic {
     padding:40px 0;
-    background-color: $bg-color;
+    background-color: $footer;
     color: $toggle-button;
 
     ul {
