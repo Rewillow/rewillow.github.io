@@ -3,7 +3,7 @@ $text-color: #fff;
 $main-color: #4fcf05;
 $about-color: #1d5e83;
 $button-color: #39b7dd;
-$nav-color: #0a6186;
+$nav-color: #24719e;
 $nav-sticky: #417399b7;
 $toggle-button: #ffffff;
 $webkit-color: #c5ecfd;
@@ -35,7 +35,7 @@ body {
 /* HEADER */
 
 nav {
-    position: static;
+    position: sticky;
     width: 100%;
     top: 0;
     right: 0;
@@ -229,29 +229,29 @@ nav {
           margin-bottom: 50px;
           text-align: center;
       }
-  
-      .portfolio-content {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(500px, auto));
-          grid-row: 8rem;
-          align-items: center;
-          margin-top: 1.8rem;
-          cursor: pointer;
-      
-          .box img{
-              width: 75%;
-              height: auto;
-              border-radius: 30px;
-              margin-bottom: 25px;
-              transition: all .30s;
-              margin-left: 12%; 
-          }
-      
-          .box img:hover{
-              transform: scale(1.1);
-          }
-      }
   }
+
+  .portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, auto));
+    grid-row: 8rem;
+    align-items: center;
+    margin-top: 1.8rem;
+    cursor: pointer;
+
+    .box img{
+        width: 75%;
+        height: auto;
+        border-radius: 30px;
+        margin-bottom: 25px;
+        transition: all .30s;
+        margin-left: 12%; 
+    }
+
+    .box img:hover{
+        transform: scale(1.1);
+    }
+}
 
   /* CONTATTAMI */
 
@@ -414,7 +414,7 @@ nav {
 
   /* SEZIONE RESPONSIVE */
 
-@media all and (max-width: 480px) {
+  @media all and (max-width: 480px) {
 
     .navbar {
          width: 100%;
@@ -429,21 +429,20 @@ nav {
     .navbar-links {
            display: none;
            width: 100%;
-
-           ul {
-            width: 100%;
-            flex-direction: column;
-        }
-
-        ul li {
-            text-align: center;
-        }
-
-        ul li a {
-            padding: .5rem 1rem;
-        }
        }
-
+     
+    .navbar-links ul {
+           width: 100%;
+           flex-direction: column;
+       }
+     
+    .navbar-links ul li {
+           text-align: center;
+       }
+     
+    .navbar-links ul li a {
+           padding: .5rem 1rem;
+       }
      
     .navbar-links.active {
           
@@ -457,7 +456,6 @@ nav {
     .navbar-links a:hover::after {
          display: none;
      }
-     
    
    .logo {
        width: 20%;
@@ -494,6 +492,7 @@ nav {
      font-size: 1rem;
    
    }
+   
    
    .skill-text h1 {
      
@@ -535,6 +534,7 @@ nav {
    
    .portfolio-content {
      grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+     align-content: center;
    }
    
    .contact-text h1 {
@@ -576,19 +576,19 @@ nav {
       .navbar-links {
             display: none;
             width: 100%;
-
-            ul {
-                width: 100%;
-                flex-direction: column;
-            }
-
-            ul li {
-                text-align: center;
-            }
-          
-           ul li a {
-                padding: .5rem 1rem;
-            }
+        }
+      
+      .navbar-links ul {
+            width: 100%;
+            flex-direction: column;
+        }
+      
+      .navbar-links ul li {
+            text-align: center;
+        }
+      
+      .navbar-links ul li a {
+            padding: .5rem 1rem;
         }
       
       .navbar-links.active {
@@ -701,167 +701,172 @@ nav {
         
         }
           }
-
-
-  @media all and (min-width: 800px) and (max-width: 991px) {
-
-            .navbar {
-                width: 100%;
-                  flex-direction: column;
-                  align-items: flex-start;
-              }
-            
-              .toggle-button {
-                margin-top: 11px;
-                align-items: center;
-                width: 55px;
-                height: 35px;
-                display: flex;
-                }
-            
-            .navbar-links {
-                  display: none;
-                  width: 100%;
-
-                  ul {
-                    width: 100%;
-                    flex-direction: column;
-                }
-              
-                ul li {
-                    text-align: center;
-                }
-              
-                ul li a {
-                    padding: .5rem 1rem;
-                }
-              }
-            
-            
-            
-            .navbar-links.active {
-                 
-                  display: flex;
-                  flex-direction: column;
-                  text-align: center;
-                  margin-top: 30px;
-                  line-height: 35px;
-              }
-            
-            .navbar-links a:hover::after {
-                display: none;
-            }
-            
-            .logo {
-              width: 20%;
-              height: auto;
-              align-items: center;
-            }
-            
-            .home {
-              height: 85vh;
-              }
-              
-              .home-text h1{
-                font-size: 5rem;
-              }
-              
-              .home-text h4 {
-                font-size: 1.3rem;
-              }
-            
-              .about {
-                grid-template-columns: repeat(1, 1fr);
-               
-              }
-              
-              .about-text h1 {
-              font-size: 3.5rem;
-              margin-left: 45px;
-              
-              }
-              
-              .about-text p {
-                margin-left: 45px;
-                
-                font-size: 1.2rem;
-              
-              }
-            
-              .skill-text h1 {
-              
-                font-size: 3.5rem;
-                margin-top: 60px;
-                margin-bottom: 20px;
-              }
-              
-              .skill-text h3 {
-                font-size: 1.5rem;
-                margin-bottom: 60px;
-                margin-top: 30px;
-              }
-            
-              .l-skill {
-                width: 140px;
-                margin-bottom: 300px;
-                margin-top: 30px;
-                margin-left: 30px;
-                margin-right: 30px;
-              }
-              
-              .portfolio h1 {
-                font-size: 3.5rem;
-              }
-              
-              .portfolio h3 {
-                font-size: 1.5rem;
-              }
-              
-              .portfolio-content {
-                grid-template-columns: repeat(auto-fit, minmax(400px, auto));
-              }
-              
-              .contact-text h1 {
-                font-size: 3.5rem;
-              }
-              
-              .contact-text h3 {
-                font-size: 1.5rem;
-              }
-              
-              .wrapper {
-                margin-top: 30vh;
-                width: 650px;
-                height: auto;
-              }
-              
-            
-                }
-            
- @media all and (min-width: 992px) and (max-width: 1280px) {
-            
-            .about-text h1 {
-              margin-left: 100px;
-            }
-            
-            .about-text p {
-              margin-left: 100px;
-            }
-            
-            .portfolio-content {
-              grid-template-columns: repeat(auto-fit, minmax(400px, auto));
-            }
-            
-            .logo {
-              width: 20%;
-              height: auto;
-              align-items: center;
-            }
-            
-            
-            .about {
-                grid-template-columns: repeat(1, 1fr);
-              }
-            
-                }        
+      
+       @media all and (min-width: 800px) and (max-width: 991px) {
+      
+      .navbar {
+          width: 100%;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+      
+        .toggle-button {
+          margin-top: 11px;
+          align-items: center;
+          width: 55px;
+          height: 35px;
+          display: flex;
+          }
+      
+      .navbar-links {
+            display: none;
+            width: 100%;
+        }
+      
+      .navbar-links ul {
+            width: 100%;
+            flex-direction: column;
+        }
+      
+      .navbar-links ul li {
+            text-align: center;
+        }
+      
+      .navbar-links ul li a {
+            padding: .5rem 1rem;
+        }
+      
+      .navbar-links.active {
+           
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-top: 30px;
+            line-height: 35px;
+        }
+      
+      .navbar-links a:hover::after {
+          display: none;
+      }
+      
+      .logo {
+        width: 20%;
+        height: auto;
+        align-items: center;
+      }
+      
+      .home {
+        height: 85vh;
+        }
+        
+        .home-text h1{
+          font-size: 5rem;
+        }
+        
+        .home-text h4 {
+          font-size: 1.3rem;
+        }
+      
+        .about {
+          grid-template-columns: repeat(1, 1fr);
+         
+        }
+        
+        .about-text h1 {
+        font-size: 3.5rem;
+        margin-left: 45px;
+        
+        }
+        
+        .about-text p {
+          margin-left: 45px;
+          
+          font-size: 1.2rem;
+        
+        }
+      
+        .skill-text h1 {
+        
+          font-size: 3.5rem;
+          margin-top: 60px;
+          margin-bottom: 20px;
+        }
+        
+        .skill-text h3 {
+          font-size: 1.5rem;
+          margin-bottom: 60px;
+          margin-top: 30px;
+        }
+      
+        .l-skill {
+          width: 140px;
+          margin-bottom: 300px;
+          margin-top: 30px;
+          margin-left: 30px;
+          margin-right: 30px;
+        }
+        
+      
+        
+       
+        
+        
+        .portfolio h1 {
+          font-size: 3.5rem;
+        }
+        
+        .portfolio h3 {
+          font-size: 1.5rem;
+        }
+        
+        .portfolio-content {
+          grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+        }
+        
+        .contact-text h1 {
+          font-size: 3.5rem;
+        }
+        
+        .contact-text h3 {
+          font-size: 1.5rem;
+        }
+        
+        .wrapper {
+          margin-top: 30vh;
+          width: 650px;
+          height: auto;
+        }
+        
+      
+          }
+      
+        @media all and (min-width: 992px) and (max-width: 1280px) {
+      
+      .about-text h1 {
+        margin-left: 100px;
+      }
+      
+      .about-text p {
+        margin-left: 100px;
+      }
+      
+      .portfolio-content {
+        grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+      }
+      
+      
+      
+      .logo {
+        width: 20%;
+        height: auto;
+        align-items: center;
+      }
+      
+      
+        .about {
+          grid-template-columns: repeat(1, 1fr);
+         
+        }
+      
+          }
       
