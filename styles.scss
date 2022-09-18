@@ -9,6 +9,7 @@ $toggle-button: #ffffff;
 $webkit-color: #c5ecfd;
 $contact-color: #2684bb;
 $footer: #295061;
+$menu-speed: 0.75s;
 
 
 * {
@@ -112,17 +113,19 @@ body {
 /* Mostra Menu */
 .menu-wrap .toggler:checked ~ .menu {
   visibility: visible;
+
+  > div {
+    transform: scale(1);
+    transition-duration: $menu-speed;
+    text-transform: uppercase;
+  }
+
+  > div > div {
+    opacity: 1;
+    transition:  opacity 0.4s ease 0.4s;
+  }
 }
 
-.menu-wrap .toggler:checked ~ .menu > div {
-  transform: scale(1);
-  transition-duration: var(--menu-speed);
-}
-
-.menu-wrap .toggler:checked ~ .menu > div > div {
-  opacity: 1;
-  transition:  opacity 0.4s ease 0.4s;
-}
 
 .menu-wrap .menu {
   position: fixed;
@@ -135,61 +138,46 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+  
 
-.menu-wrap .menu > div {
-  background: $footer;
-  border-radius: 50%;
-  width: 200vw;
-  height: 200vw;
-  display: flex;
-  flex: none;
-  align-items: center;
-  justify-content: center;
-  transform: scale(0);
-  transition: all 0.4s ease;
-}
-
-.menu-wrap .menu > div > div {
-  text-align: center;
-  max-width: 90vw;
-  max-height: 100vh;
-  opacity: 0;
-  transition: opacity 0.4s ease;
-}
-
-.menu-wrap .menu > div > div > ul > li {
-  list-style: none;
-  color: #fff;
-  font-size: 1.5rem;
-  padding: 1rem;
-}
-
-.menu-wrap .menu > div > div > ul > li > a {
-  color: inherit;
-  text-decoration: none;
-  transition: color 0.4s ease;
-}
-
-.toggle-button {
-  position: absolute;
-  right: 5rem;
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 21px;
-  align-items: center;
-
- 
-}
-
-.toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: $toggle-button;
-    border-radius: 10px;
+  > div { /* Chiusura menù */
+    background: $footer;
+    border-radius: 50%;
+    width: 200vw;
+    height: 200vw;
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: all 0.4s ease;
+    text-transform: uppercase;
+    
   }
+
+  > div > div {
+    text-align: center;
+    max-width: 90vw;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.4s ease; /* Comparsa scritte menù */
+    
+  }
+
+  > div > div > ul > li {
+    list-style: none;
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 1rem;
+  }
+
+  > div > div > ul > li > a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.4s ease;
+  }
+}
+
 
 /* HOME */
 
@@ -234,8 +222,6 @@ body {
     font-size: 1.4rem;
     text-transform: uppercase;
     transition: .3s ease 
-    
-    
     
   }
 

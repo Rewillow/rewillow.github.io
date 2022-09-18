@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -94,12 +95,11 @@ body {
 .menu-wrap .toggler:checked ~ .menu {
   visibility: visible;
 }
-
 .menu-wrap .toggler:checked ~ .menu > div {
   transform: scale(1);
-  transition-duration: var(--menu-speed);
+  transition-duration: 0.75s;
+  text-transform: uppercase;
 }
-
 .menu-wrap .toggler:checked ~ .menu > div > div {
   opacity: 1;
   transition: opacity 0.4s ease 0.4s;
@@ -117,8 +117,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-
-.menu-wrap .menu > div {
+.menu-wrap .menu > div { /* Chiusura menù */
   background: #295061;
   border-radius: 50%;
   width: 200vw;
@@ -129,45 +128,25 @@ body {
   justify-content: center;
   transform: scale(0);
   transition: all 0.4s ease;
+  text-transform: uppercase;
 }
-
 .menu-wrap .menu > div > div {
   text-align: center;
   max-width: 90vw;
   max-height: 100vh;
   opacity: 0;
-  transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease; /* Comparsa scritte menù */
 }
-
 .menu-wrap .menu > div > div > ul > li {
   list-style: none;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   padding: 1rem;
 }
-
 .menu-wrap .menu > div > div > ul > li > a {
   color: inherit;
   text-decoration: none;
   transition: color 0.4s ease;
-}
-
-.toggle-button {
-  position: absolute;
-  right: 5rem;
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 21px;
-  align-items: center;
-}
-
-.toggle-button .bar {
-  height: 3px;
-  width: 100%;
-  background-color: #ffffff;
-  border-radius: 10px;
 }
 
 /* HOME */
