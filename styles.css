@@ -98,7 +98,6 @@ body {
 .menu-wrap .toggler:checked ~ .menu > div {
   transform: scale(1);
   transition-duration: 0.75s;
-  text-transform: uppercase;
 }
 .menu-wrap .toggler:checked ~ .menu > div > div {
   opacity: 1;
@@ -128,7 +127,6 @@ body {
   justify-content: center;
   transform: scale(0);
   transition: all 0.4s ease;
-  text-transform: uppercase;
 }
 .menu-wrap .menu > div > div {
   text-align: center;
@@ -140,7 +138,7 @@ body {
 .menu-wrap .menu > div > div > ul > li {
   list-style: none;
   color: #fff;
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   padding: 1rem;
 }
 .menu-wrap .menu > div > div > ul > li > a {
@@ -561,6 +559,7 @@ body {
   .button .cta {
     padding: 10px 15px;
     margin-top: 10px;
+    margin-right: 10px;
   }
   .about {
     grid-template-columns: repeat(1, 1fr);
@@ -622,58 +621,18 @@ body {
   }
 }
 @media all and (min-width: 800px) and (max-width: 991px) {
-  nav {
-    padding: 25px 15%;
-  }
-  .navbar {
-    width: 100%;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .toggle-button {
-    margin-top: 11px;
-    align-items: center;
-    width: 55px;
-    height: 35px;
-    display: flex;
-  }
-  .navbar-links {
-    display: none;
-    width: 100%;
-  }
-  .navbar-links .ul {
-    width: 100%;
-    flex-direction: column;
-  }
-  .navbar-links ul li {
-    text-align: center;
-  }
-  .navbar-links ul li a {
-    padding: 0.5rem 1rem;
-  }
-  .navbar-links.active {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 30px;
-    line-height: 35px;
-  }
-  .navbar-links a:hover::after {
-    display: none;
-  }
-  .logo {
-    width: 20%;
-    height: auto;
-    align-items: center;
-  }
   .home {
-    height: 85vh;
+    height: 45vh;
   }
   .home .home-text h1 {
     font-size: 5rem;
   }
   .home .home-text h4 {
     font-size: 1.3rem;
+  }
+  .button .cta {
+    padding: 10px 15px;
+    margin-top: 10px;
   }
   .about {
     grid-template-columns: repeat(1, 1fr);
@@ -740,11 +699,6 @@ body {
   }
   .portfolio-content {
     grid-template-columns: repeat(auto-fit, minmax(400px, auto));
-  }
-  .logo {
-    width: 10%;
-    height: auto;
-    align-items: center;
   }
   .about {
     grid-template-columns: repeat(1, 1fr);
