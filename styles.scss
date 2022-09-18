@@ -10,6 +10,7 @@ $webkit-color: #c5ecfd;
 $contact-color: #2684bb;
 $footer: #295061;
 $menu-speed: 0.75s;
+$hamb-menu: #194966;
 
 
 * {
@@ -62,7 +63,7 @@ body {
     width: 60px;
     height: 60px;
     padding: 1rem;
-    background: $about-color;
+    background: $hamb-menu;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,7 +73,7 @@ body {
       flex: none;
       width: 100%;
       height: 2px;
-      background: #fff;
+      background:$text-color;
       display: flex;
       align-items: center;
       justify-content: center;
