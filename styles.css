@@ -520,20 +520,20 @@ nav nav.sticky {
   .home {
     height: 85vh;
   }
-  .home-text h1 {
+  .home .home-text h1 {
     font-size: 4.5rem;
   }
-  .home-text h4 {
+  .home .home-text h4 {
     font-size: 1.2rem;
   }
   .about {
     grid-template-columns: repeat(1, 1fr);
   }
-  .about-text h1 {
+  .about .about-text h1 {
     font-size: 3rem;
     margin-left: 25px;
   }
-  .about-text p {
+  .about .about-text p {
     margin-left: 25px;
     max-width: 400px;
     font-size: 1.2rem;
@@ -696,9 +696,6 @@ nav nav.sticky {
   }
 }
 @media all and (min-width: 992px) and (max-width: 1280px) {
-  nav {
-    padding: 25px 15%;
-  }
   .about-text h1 {
     margin-left: 100px;
   }
@@ -709,7 +706,7 @@ nav nav.sticky {
     grid-template-columns: repeat(auto-fit, minmax(400px, auto));
   }
   .logo {
-    width: 20%;
+    width: 10%;
     height: auto;
     align-items: center;
   }
