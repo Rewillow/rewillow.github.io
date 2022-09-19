@@ -562,7 +562,14 @@ body {
 
   /* SEZIONE RESPONSIVE */
 
-  @media all and (max-width: 480px) {
+  @media all and (min-width: 370px) and (max-width: 480px) {
+
+    .menu-wrap .menu {
+      > div {
+        width: 400vw;
+        height: 400vw;
+      }
+    }
    
    
    .home {
@@ -635,15 +642,25 @@ body {
     }
     }
   }
+
+  .portfolio-develope {
+    .box1 img {
+        width: 73%;
+    }
+}
    
-   .portfolio h3 {
+   .portfolio-text1 h3 {
      font-size: 1.2rem;
    }
    
-   .portfolio-content {
+   .portfolio-video {
      grid-template-columns: repeat(auto-fit, minmax(350px, auto));
      align-content: center;
    }
+
+   .portfolio-text2 h3 {
+    font-size: 1.2rem;
+  }
    
    .contact-text h1 {
      font-size: 3rem;
