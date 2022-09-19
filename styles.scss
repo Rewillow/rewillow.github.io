@@ -566,8 +566,8 @@ body {
 
     .menu-wrap .menu {
       > div {
-        width: 400vw;
-        height: 400vw;
+        width: 700vw;
+        height: 700vw;
       }
     }
    
@@ -682,6 +682,13 @@ body {
      }
 
  @media all and (min-width: 481px) and (max-width: 799px) {
+
+  .menu-wrap .menu {
+    > div {
+      width: 700vw;
+      height: 700vw;
+    }
+  }
       
       .home {
         height: 45vh;
@@ -754,17 +761,24 @@ body {
           }
           }
         }
-        
-        .portfolio h1 {
-          font-size: 3rem;
-        }
-        
-        .portfolio h3 {
-          font-size: 1.3rem;
-        }
-        
-        .portfolio-content {
-          grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+
+        .portfolio-develope {
+          .box1 img {
+              width: 73%;
+          }
+      }
+         
+         .portfolio-text1 h3 {
+           font-size: 1.2rem;
+         }
+         
+         .portfolio-video {
+           grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+           align-content: center;
+         }
+      
+         .portfolio-text2 h3 {
+          font-size: 1.2rem;
         }
         
         .contact-text h1 {
@@ -858,16 +872,23 @@ body {
         }
         
         
-        .portfolio h1 {
-          font-size: 3.5rem;
-        }
-        
-        .portfolio h3 {
-          font-size: 1.5rem;
-        }
-        
-        .portfolio-content {
-          grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+        .portfolio-develope {
+          .box1 img {
+              width: 35%;
+          }
+      }
+         
+         .portfolio-text1 h3 {
+           font-size: 1.2rem;
+         }
+         
+         .portfolio-video {
+           grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+           align-content: center;
+         }
+      
+         .portfolio-text2 h3 {
+          font-size: 1.2rem;
         }
         
         .contact-text h1 {
@@ -887,7 +908,7 @@ body {
       
           }
       
- @media all and (min-width: 992px) and (max-width: 1280px) {
+ @media all and (min-width: 992px) and (max-width: 1285px) {
 
       
       .about-text h1 {
@@ -898,18 +919,30 @@ body {
         margin-left: 100px;
       }
       
-      .portfolio-content {
-        grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+      .portfolio-develope {
+        .box1 img {
+            width: 35%;
+        }
+    }
+       
+       .portfolio-text1 h3 {
+         font-size: 1.2rem;
+       }
+       
+       .portfolio-video {
+         grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+         align-content: center;
+       }
+    
+       .portfolio-text2 h3 {
+        font-size: 1.2rem;
       }
 
-      
-      
       
      .about {
           grid-template-columns: repeat(1, 1fr);
          
         }
-      
           }
       
           #skill-box {
