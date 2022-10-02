@@ -650,6 +650,7 @@ body {
   .portfolio-develope {
     .box1 img {
         width: 73%;
+        margin-bottom: 47px;
     }
 }
    
@@ -768,7 +769,8 @@ body {
 
         .portfolio-develope {
           .box1 img {
-              width: 73%;
+              width: 50%;
+              margin-bottom: 47px;
           }
       }
          
@@ -949,20 +951,5 @@ body {
         }
           }
       
-          #skill-box {
-            padding: 0;
-            margin: 0;
-            text-align: center;
-        
-            li {
-              display: inline-block;
-              margin: 15px;
-              margin-bottom: 120px;
-        
-            img {
-              width: 170px;
-              height: auto;
-            }
-            }
-          }
+
           
